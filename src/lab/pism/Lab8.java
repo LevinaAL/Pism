@@ -33,7 +33,7 @@ public class  Lab8
 
         obj.add(0, "Dasha");
         obj.add(1, "Ann");
-        System.out.println("Current array list after addiding elements:"+obj);
+        System.out.println("Current array list after adding elements:"+obj);
 
         //Remove elements
         obj.remove("Dima");
@@ -119,18 +119,7 @@ public class  Lab8
         }
         fr.close();
 
-        System.out.println("\n" + "Add new elements and remove the first elements of the array^ ");
-        Reader r = new InputStreamReader(System.in);
-        BufferedReader reader = new BufferedReader(r);
-
-        for (int w=0; w<obj.size(); w++)
-        {
-            String s = reader.readLine();
-            obj.add(4, s);
-            obj.remove(0);
-
-            System.out.println(obj);
-        }
+   
     }
 }
 
