@@ -118,7 +118,19 @@ public class  Lab8
             i++;
         }
         fr.close();
-        
+
+        System.out.println("\n" + "Add new elements and remove the first elements of the array^ ");
+        Reader r = new InputStreamReader(System.in);
+        BufferedReader reader = new BufferedReader(r);
+
+        for (int w=0; w<obj.size(); w++)
+        {
+            String s = reader.readLine();
+            obj.add(4, s);
+            obj.remove(0);
+
+            System.out.println(obj);
+        }
     }
 }
 
